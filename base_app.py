@@ -1,10 +1,6 @@
 import streamlit as st
 import openai
- 
-# Title
-st.title("🎬 Movie Rating Predictor")
-st.write("Enter a movie summary and get a predicted IMDb rating.")
-# Text input from user
+st.title("Movie Rating Predictor")
 movie_summary = st.text_area("Movie Summary", height=200)
 if movie_summary:
     response = openai.chat.completions.create(
